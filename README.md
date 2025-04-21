@@ -1,26 +1,10 @@
 # ToolNet-Mechanical-Tool-Classifier-with-PyTorch
-In this project, I built and trained neural networks using PyTorch to classify images of mechanical tools into 8 categories (e.g., hammer, wrench, pliers). The goal was to deepen my understanding of neural network architectures, training loops, and model evaluation.
+In this assignment, I developed a neural network model using PyTorch to classify images of mechanical tools into one of eight categories, such as hammer, wrench, and pliers. The project was designed to reinforce my understanding of neural networks by implementing both a fully connected (ANN) and a convolutional neural network (CNN) and comparing their performance.
 
-What I Did
+I began by constructing a feedforward neural network from scratch, writing the full training loop including data loading, batching, forward pass, loss calculation, and backpropagation using PyTorch. I worked with a dataset of mechanical tool images and applied standard data preprocessing and augmentation techniques to improve generalization.
 
-Developed a feedforward neural network (ANN) from scratch and implemented the full training pipeline
+Throughout the training process, I experimented with various hyperparameters such as learning rate, batch size, number of hidden layers, and epochs. I monitored both training and validation losses over time to evaluate convergence behavior and detect signs of overfitting or underfitting. I also split the dataset into training, validation, and test sets to ensure the model's performance was measured reliably.
 
-Used PyTorch to manage data loading, batching, model definition, loss computation, and optimization
+After training the ANN, I built a simple CNN to observe how convolutional layers impact feature extraction and classification accuracy. The CNN significantly outperformed the fully connected network, highlighting the effectiveness of localized feature learning for image data.
 
-Experimented with hyperparameters such as learning rate, batch size, and number of hidden layers
-
-Visualized training and validation loss to monitor overfitting and underfitting
-
-Compared model performance between a basic ANN and a Convolutional Neural Network (CNN)
-
-Gained practical experience distinguishing between training, validation, and test splits
-
-Key Learnings
-
-How to structure and implement the training loop in PyTorch
-
-The effect of hyperparameter tuning on model convergence and generalization
-
-Differences in performance and feature extraction between ANNs and CNNs
-
-The importance of model evaluation using validation/test sets and loss visualization
+Overall, this project helped me gain hands-on experience with model training, evaluation, and debugging in PyTorch. It deepened my understanding of core machine learning principles such as generalization, model complexity, and the importance of hyperparameter tuning.
